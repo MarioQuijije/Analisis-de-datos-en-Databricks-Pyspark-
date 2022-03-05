@@ -13,7 +13,7 @@ Retos en la tranformación de datos:
 |[2. Tranformaciones en tabla de cliente](#2-Tranformaciones-en-tabla-de-cliente)|TRANSLATE, REGEX_REPLACE, REGEX_EXTRACT, TRIM|
 |[3. Tranformaciones en tabla sucursales](#3-Tranformaciones-en-tabla-sucursales)|REGEX_EXTRACT|
 |[4. Tranformaciones en la tabla de productos](#4-Tranformaciones-en-la-tabla-de-productos)|TRANSLATE|
-|[5. Tabla de hechos](#5-Tabla-de-hechos)|GROUPBY, SUM, ORDERBY , COUNTDISTINCT, FILTER, REGEXP_EXTRACT , FILTER, COL,MULTI TABLE JOINS|
+|[5. Tabla de hechos](#5-Tabla-de-hechos)|GROUPBY, SUM, ORDERBY , COUNTDISTINCT, FILTER, REGEXP_EXTRACT, FILTER, COL,MULTI TABLE JOINS|
 
 ## 1. Creando dataframe a partir de archivos CSV
 
@@ -208,13 +208,13 @@ Resultado:
 Por otro lado, la contadora de la compañía dice que le sería más eficiente si los datos de una misma orden se encontrarán más resumidos en una única línea ya que, en algunas órdenes se realiza la compra de más de un tipo de producto y debe realizar la suma del total de cada tipo de producto que se compró en esa orden para obtener la venta total de toda la orden.  Utiliza la tabla de ordenes para generar una tabla que cumpla con lo siguiente:
 
 
-      1- Una columna con el order_id, donde el order_id sea único.
+1- Una columna con el order_id, donde el order_id sea único.
 
-      2- Una columna que contenga el número de productos distintos que se compraron en esa orden.
+2- Una columna que contenga el número de productos distintos que se compraron en esa orden.
 
-      3- Una columna con el total de la venta generada por orden.
+3- Una columna con el total de la venta generada por orden.
 
-      4- La fecha en que se realizó la orden.
+4- La fecha en que se realizó la orden.
       
  
 ```Pyspark
